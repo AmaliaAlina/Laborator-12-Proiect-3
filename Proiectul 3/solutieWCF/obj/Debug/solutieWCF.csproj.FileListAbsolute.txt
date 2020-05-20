@@ -1,0 +1,22 @@
+C:\Users\Amalia\source\repos\Proiect2\solutieWCF\bin\Debug\solutieWCF.dll
+C:\Users\Amalia\source\repos\Proiect2\solutieWCF\bin\Debug\solutieWCF.pdb
+C:\Users\Amalia\source\repos\Proiect2\solutieWCF\bin\Debug\PictureManagerLibrary.dll
+C:\Users\Amalia\source\repos\Proiect2\solutieWCF\bin\Debug\EntityFramework.dll
+C:\Users\Amalia\source\repos\Proiect2\solutieWCF\bin\Debug\PictureManagerLibrary.pdb
+C:\Users\Amalia\source\repos\Proiect2\solutieWCF\bin\Debug\PictureManagerLibrary.dll.config
+C:\Users\Amalia\source\repos\Proiect2\solutieWCF\bin\Debug\EntityFramework.xml
+C:\Users\Amalia\source\repos\Proiect2\solutieWCF\obj\Debug\solutieWCF.csprojAssemblyReference.cache
+C:\Users\Amalia\source\repos\Proiect2\solutieWCF\obj\Debug\solutieWCF.csproj.CopyComplete
+C:\Users\Amalia\source\repos\Proiect2\solutieWCF\obj\Debug\solutieWCF.dll
+C:\Users\Amalia\source\repos\Proiect2\solutieWCF\obj\Debug\solutieWCF.pdb
+C:\Users\Amalia\Desktop\Ami\git Organize\laboratoare organizate TSP.NET git\Laborator-12-Proiect-3\Proiectul 3\solutieWCF\bin\Debug\solutieWCF.dll
+C:\Users\Amalia\Desktop\Ami\git Organize\laboratoare organizate TSP.NET git\Laborator-12-Proiect-3\Proiectul 3\solutieWCF\bin\Debug\solutieWCF.pdb
+C:\Users\Amalia\Desktop\Ami\git Organize\laboratoare organizate TSP.NET git\Laborator-12-Proiect-3\Proiectul 3\solutieWCF\bin\Debug\PictureManagerLibrary.dll
+C:\Users\Amalia\Desktop\Ami\git Organize\laboratoare organizate TSP.NET git\Laborator-12-Proiect-3\Proiectul 3\solutieWCF\bin\Debug\EntityFramework.dll
+C:\Users\Amalia\Desktop\Ami\git Organize\laboratoare organizate TSP.NET git\Laborator-12-Proiect-3\Proiectul 3\solutieWCF\bin\Debug\PictureManagerLibrary.pdb
+C:\Users\Amalia\Desktop\Ami\git Organize\laboratoare organizate TSP.NET git\Laborator-12-Proiect-3\Proiectul 3\solutieWCF\bin\Debug\PictureManagerLibrary.dll.config
+C:\Users\Amalia\Desktop\Ami\git Organize\laboratoare organizate TSP.NET git\Laborator-12-Proiect-3\Proiectul 3\solutieWCF\bin\Debug\EntityFramework.xml
+C:\Users\Amalia\Desktop\Ami\git Organize\laboratoare organizate TSP.NET git\Laborator-12-Proiect-3\Proiectul 3\solutieWCF\obj\Debug\SolutieWCF.csprojAssemblyReference.cache
+C:\Users\Amalia\Desktop\Ami\git Organize\laboratoare organizate TSP.NET git\Laborator-12-Proiect-3\Proiectul 3\solutieWCF\obj\Debug\SolutieWCF.csproj.CopyComplete
+C:\Users\Amalia\Desktop\Ami\git Organize\laboratoare organizate TSP.NET git\Laborator-12-Proiect-3\Proiectul 3\solutieWCF\obj\Debug\solutieWCF.dll
+C:\Users\Amalia\Desktop\Ami\git Organize\laboratoare organizate TSP.NET git\Laborator-12-Proiect-3\Proiectul 3\solutieWCF\obj\Debug\solutieWCF.pdb

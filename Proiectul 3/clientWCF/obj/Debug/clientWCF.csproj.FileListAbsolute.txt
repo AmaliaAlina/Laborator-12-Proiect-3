@@ -1,0 +1,8 @@
+C:\Users\Amalia\source\repos\Proiect2\clientWCF\bin\Debug\clientWCF.exe.config
+C:\Users\Amalia\source\repos\Proiect2\clientWCF\bin\Debug\clientWCF.exe
+C:\Users\Amalia\source\repos\Proiect2\clientWCF\bin\Debug\clientWCF.pdb
+C:\Users\Amalia\source\repos\Proiect2\clientWCF\obj\Debug\clientWCF.csprojAssemblyReference.cache
+C:\Users\Amalia\source\repos\Proiect2\clientWCF\obj\Debug\clientWCF.Properties.Resources.resources
+C:\Users\Amalia\source\repos\Proiect2\clientWCF\obj\Debug\clientWCF.csproj.GenerateResource.cache
+C:\Users\Amalia\source\repos\Proiect2\clientWCF\obj\Debug\clientWCF.exe
+C:\Users\Amalia\source\repos\Proiect2\clientWCF\obj\Debug\clientWCF.pdb

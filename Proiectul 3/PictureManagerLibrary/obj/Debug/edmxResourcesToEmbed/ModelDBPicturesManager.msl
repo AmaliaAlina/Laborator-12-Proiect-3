@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelDBPicturesManagerStoreContainer" CdmEntityContainer="ModelDBPicturesManagerContainer">
+    <EntitySetMapping Name="Media">
+      <EntityTypeMapping TypeName="IsTypeOf(ModelDBPicturesManager.Media)">
+        <MappingFragment StoreEntitySet="Media">
+          <ScalarProperty Name="Id_Media" ColumnName="Id_Media" />
+          <ScalarProperty Name="Media_name" ColumnName="Media_name" />
+          <ScalarProperty Name="Media_path" ColumnName="Media_path" />
+          <ScalarProperty Name="Is_Deleted" ColumnName="Is_Deleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tags">
+      <EntityTypeMapping TypeName="IsTypeOf(ModelDBPicturesManager.Tags)">
+        <MappingFragment StoreEntitySet="Tags">
+          <ScalarProperty Name="Id_Tags" ColumnName="Id_Tags" />
+          <ScalarProperty Name="Value_tag" ColumnName="Value_tag" />
+          <ScalarProperty Name="Is_Deleted" ColumnName="Is_Deleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TagTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(ModelDBPicturesManager.TagType)">
+        <MappingFragment StoreEntitySet="TagTypes">
+          <ScalarProperty Name="Id_TagType" ColumnName="Id_TagType" />
+          <ScalarProperty Name="Value_tagType" ColumnName="Value_tagType" />
+          <ScalarProperty Name="Is_Deleted" ColumnName="Is_Deleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TableWays">
+      <EntityTypeMapping TypeName="IsTypeOf(ModelDBPicturesManager.TableWays)">
+        <MappingFragment StoreEntitySet="TableWays">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Is_Deleted" ColumnName="Is_Deleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="MediaTableWays" TypeName="ModelDBPicturesManager.MediaTableWays" StoreEntitySet="TableWays">
+      <EndProperty Name="Media">
+        <ScalarProperty Name="Id_Media" ColumnName="Medium_Id_Media" />
+      </EndProperty>
+      <EndProperty Name="TableWays">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="TagsTableWays" TypeName="ModelDBPicturesManager.TagsTableWays" StoreEntitySet="TableWays">
+      <EndProperty Name="Tags">
+        <ScalarProperty Name="Id_Tags" ColumnName="Tag_Id_Tags" />
+      </EndProperty>
+      <EndProperty Name="TableWays">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="TagTypeTableWays" TypeName="ModelDBPicturesManager.TagTypeTableWays" StoreEntitySet="TableWays">
+      <EndProperty Name="TagType">
+        <ScalarProperty Name="Id_TagType" ColumnName="TagType_Id_TagType" />
+      </EndProperty>
+      <EndProperty Name="TableWays">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="ModelDBPicturesManager.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="ModelDBPicturesManagerStoreContainer">
+    <EntitySet Name="Media" EntityType="ModelDBPicturesManager.Store.Media" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Tags" EntityType="ModelDBPicturesManager.Store.Tags" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TagTypes" EntityType="ModelDBPicturesManager.Store.TagTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TableWays" EntityType="ModelDBPicturesManager.Store.TableWays" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="MediaTableWays" Association="ModelDBPicturesManager.Store.MediaTableWays">
+      <End Role="Media" EntitySet="Media" />
+      <End Role="TableWays" EntitySet="TableWays" />
+    </AssociationSet>
+    <AssociationSet Name="TagsTableWays" Association="ModelDBPicturesManager.Store.TagsTableWays">
+      <End Role="Tags" EntitySet="Tags" />
+      <End Role="TableWays" EntitySet="TableWays" />
+    </AssociationSet>
+    <AssociationSet Name="TagTypeTableWays" Association="ModelDBPicturesManager.Store.TagTypeTableWays">
+      <End Role="TagType" EntitySet="TagTypes" />
+      <End Role="TableWays" EntitySet="TableWays" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Media">
+    <Key>
+      <PropertyRef Name="Id_Media" />
+    </Key>
+    <Property Name="Id_Media" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Media_name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Media_path" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Is_Deleted" Type="bit" Nullable="false" DefaultValue="false" />
+  </EntityType>
+  <EntityType Name="Tags">
+    <Key>
+      <PropertyRef Name="Id_Tags" />
+    </Key>
+    <Property Name="Id_Tags" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Value_tag" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Is_Deleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TagTypes">
+    <Key>
+      <PropertyRef Name="Id_TagType" />
+    </Key>
+    <Property Name="Id_TagType" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Value_tagType" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Is_Deleted" Type="bit" Nullable="false" DefaultValue="false" />
+  </EntityType>
+  <EntityType Name="TableWays">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Is_Deleted" Type="bit" Nullable="false" />
+    <Property Name="Medium_Id_Media" Type="int" Nullable="false" />
+    <Property Name="Tag_Id_Tags" Type="int" Nullable="false" />
+    <Property Name="TagType_Id_TagType" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="MediaTableWays">
+    <End Role="Media" Type="ModelDBPicturesManager.Store.Media" Multiplicity="1" />
+    <End Role="TableWays" Type="ModelDBPicturesManager.Store.TableWays" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Media">
+        <PropertyRef Name="Id_Media" />
+      </Principal>
+      <Dependent Role="TableWays">
+        <PropertyRef Name="Medium_Id_Media" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TagsTableWays">
+    <End Role="Tags" Type="ModelDBPicturesManager.Store.Tags" Multiplicity="1" />
+    <End Role="TableWays" Type="ModelDBPicturesManager.Store.TableWays" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tags">
+        <PropertyRef Name="Id_Tags" />
+      </Principal>
+      <Dependent Role="TableWays">
+        <PropertyRef Name="Tag_Id_Tags" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TagTypeTableWays">
+    <End Role="TagType" Type="ModelDBPicturesManager.Store.TagTypes" Multiplicity="1" />
+    <End Role="TableWays" Type="ModelDBPicturesManager.Store.TableWays" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TagType">
+        <PropertyRef Name="Id_TagType" />
+      </Principal>
+      <Dependent Role="TableWays">
+        <PropertyRef Name="TagType_Id_TagType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="ModelDBPicturesManager" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="ModelDBPicturesManagerContainer" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Media" EntityType="ModelDBPicturesManager.Media" />
+          <EntitySet Name="Tags" EntityType="ModelDBPicturesManager.Tags" />
+          <EntitySet Name="TagTypes" EntityType="ModelDBPicturesManager.TagType" />
+          <EntitySet Name="TableWays" EntityType="ModelDBPicturesManager.TableWays" />
+          <AssociationSet Name="MediaTableWays" Association="ModelDBPicturesManager.MediaTableWays">
+            <End Role="Media" EntitySet="Media" />
+            <End Role="TableWays" EntitySet="TableWays" />
+          </AssociationSet>
+          <AssociationSet Name="TagsTableWays" Association="ModelDBPicturesManager.TagsTableWays">
+            <End Role="Tags" EntitySet="Tags" />
+            <End Role="TableWays" EntitySet="TableWays" />
+          </AssociationSet>
+          <AssociationSet Name="TagTypeTableWays" Association="ModelDBPicturesManager.TagTypeTableWays">
+            <End Role="TagType" EntitySet="TagTypes" />
+            <End Role="TableWays" EntitySet="TableWays" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Media">
+          <Key>
+            <PropertyRef Name="Id_Media" />
+          </Key>
+          <Property Name="Id_Media" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Media_name" Type="String" Nullable="false" />
+          <Property Name="Media_path" Type="String" Nullable="false" />
+          <NavigationProperty Name="TableWays" Relationship="ModelDBPicturesManager.MediaTableWays" FromRole="Media" ToRole="TableWays" />
+          <Property Name="Is_Deleted" Type="Boolean" Nullable="false" DefaultValue="False" />
+        </EntityType>
+        <EntityType Name="Tags">
+          <Key>
+            <PropertyRef Name="Id_Tags" />
+          </Key>
+          <Property Name="Id_Tags" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Value_tag" Type="String" Nullable="true" />
+          <NavigationProperty Name="TableWays" Relationship="ModelDBPicturesManager.TagsTableWays" FromRole="Tags" ToRole="TableWays" />
+          <Property Name="Is_Deleted" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TagType">
+          <Key>
+            <PropertyRef Name="Id_TagType" />
+          </Key>
+          <Property Name="Id_TagType" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Value_tagType" Type="String" Nullable="true" />
+          <NavigationProperty Name="TableWays" Relationship="ModelDBPicturesManager.TagTypeTableWays" FromRole="TagType" ToRole="TableWays" />
+          <Property Name="Is_Deleted" Type="Boolean" Nullable="false" DefaultValue="False" />
+        </EntityType>
+        <EntityType Name="TableWays">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="Medium" Relationship="ModelDBPicturesManager.MediaTableWays" FromRole="TableWays" ToRole="Media" />
+          <NavigationProperty Name="Tag" Relationship="ModelDBPicturesManager.TagsTableWays" FromRole="TableWays" ToRole="Tags" />
+          <NavigationProperty Name="TagType" Relationship="ModelDBPicturesManager.TagTypeTableWays" FromRole="TableWays" ToRole="TagType" />
+          <Property Name="Is_Deleted" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <Association Name="MediaTableWays">
+          <End Type="ModelDBPicturesManager.Media" Role="Media" Multiplicity="1" />
+          <End Type="ModelDBPicturesManager.TableWays" Role="TableWays" Multiplicity="*" />
+        </Association>
+        <Association Name="TagsTableWays">
+          <End Type="ModelDBPicturesManager.Tags" Role="Tags" Multiplicity="1" />
+          <End Type="ModelDBPicturesManager.TableWays" Role="TableWays" Multiplicity="*" />
+        </Association>
+        <Association Name="TagTypeTableWays">
+          <End Type="ModelDBPicturesManager.TagType" Role="TagType" Multiplicity="1" />
+          <End Type="ModelDBPicturesManager.TableWays" Role="TableWays" Multiplicity="*" />
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelDBPicturesManagerStoreContainer" CdmEntityContainer="ModelDBPicturesManagerContainer">
+    <EntitySetMapping Name="Media">
+      <EntityTypeMapping TypeName="IsTypeOf(ModelDBPicturesManager.Media)">
+        <MappingFragment StoreEntitySet="Media">
+          <ScalarProperty Name="Id_Media" ColumnName="Id_Media" />
+          <ScalarProperty Name="Media_name" ColumnName="Media_name" />
+          <ScalarProperty Name="Media_path" ColumnName="Media_path" />
+          <ScalarProperty Name="Is_Deleted" ColumnName="Is_Deleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tags">
+      <EntityTypeMapping TypeName="IsTypeOf(ModelDBPicturesManager.Tags)">
+        <MappingFragment StoreEntitySet="Tags">
+          <ScalarProperty Name="Id_Tags" ColumnName="Id_Tags" />
+          <ScalarProperty Name="Value_tag" ColumnName="Value_tag" />
+          <ScalarProperty Name="Is_Deleted" ColumnName="Is_Deleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TagTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(ModelDBPicturesManager.TagType)">
+        <MappingFragment StoreEntitySet="TagTypes">
+          <ScalarProperty Name="Id_TagType" ColumnName="Id_TagType" />
+          <ScalarProperty Name="Value_tagType" ColumnName="Value_tagType" />
+          <ScalarProperty Name="Is_Deleted" ColumnName="Is_Deleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TableWays">
+      <EntityTypeMapping TypeName="IsTypeOf(ModelDBPicturesManager.TableWays)">
+        <MappingFragment StoreEntitySet="TableWays">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Is_Deleted" ColumnName="Is_Deleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="MediaTableWays" TypeName="ModelDBPicturesManager.MediaTableWays" StoreEntitySet="TableWays">
+      <EndProperty Name="Media">
+        <ScalarProperty Name="Id_Media" ColumnName="Medium_Id_Media" />
+      </EndProperty>
+      <EndProperty Name="TableWays">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="TagsTableWays" TypeName="ModelDBPicturesManager.TagsTableWays" StoreEntitySet="TableWays">
+      <EndProperty Name="Tags">
+        <ScalarProperty Name="Id_Tags" ColumnName="Tag_Id_Tags" />
+      </EndProperty>
+      <EndProperty Name="TableWays">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="TagTypeTableWays" TypeName="ModelDBPicturesManager.TagTypeTableWays" StoreEntitySet="TableWays">
+      <EndProperty Name="TagType">
+        <ScalarProperty Name="Id_TagType" ColumnName="TagType_Id_TagType" />
+      </EndProperty>
+      <EndProperty Name="TableWays">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+        <DesignerProperty Name="UseLegacyProvider" Value="True" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

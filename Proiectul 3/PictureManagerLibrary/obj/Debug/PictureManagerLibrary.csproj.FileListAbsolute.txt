@@ -1,0 +1,22 @@
+C:\Users\Amalia\source\repos\PictureManagerSolution\PictureManagerLibrary\bin\Debug\PictureManagerLibrary.dll.config
+C:\Users\Amalia\source\repos\PictureManagerSolution\PictureManagerLibrary\bin\Debug\PictureManagerLibrary.dll
+C:\Users\Amalia\source\repos\PictureManagerSolution\PictureManagerLibrary\bin\Debug\PictureManagerLibrary.pdb
+C:\Users\Amalia\source\repos\PictureManagerSolution\PictureManagerLibrary\bin\Debug\EntityFramework.dll
+C:\Users\Amalia\source\repos\PictureManagerSolution\PictureManagerLibrary\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Amalia\source\repos\PictureManagerSolution\PictureManagerLibrary\bin\Debug\EntityFramework.xml
+C:\Users\Amalia\source\repos\PictureManagerSolution\PictureManagerLibrary\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Amalia\source\repos\PictureManagerSolution\PictureManagerLibrary\obj\Debug\PictureManagerLibrary.csprojAssemblyReference.cache
+C:\Users\Amalia\source\repos\PictureManagerSolution\PictureManagerLibrary\obj\Debug\PictureManagerLibrary.csproj.CopyComplete
+C:\Users\Amalia\source\repos\PictureManagerSolution\PictureManagerLibrary\obj\Debug\PictureManagerLibrary.dll
+C:\Users\Amalia\source\repos\PictureManagerSolution\PictureManagerLibrary\obj\Debug\PictureManagerLibrary.pdb
+C:\Users\Amalia\Desktop\Ami\git Organize\laboratoare organizate TSP.NET git\Laborator-12-Proiect-3\Proiectul 3\PictureManagerLibrary\bin\Debug\PictureManagerLibrary.dll.config
+C:\Users\Amalia\Desktop\Ami\git Organize\laboratoare organizate TSP.NET git\Laborator-12-Proiect-3\Proiectul 3\PictureManagerLibrary\bin\Debug\PictureManagerLibrary.dll
+C:\Users\Amalia\Desktop\Ami\git Organize\laboratoare organizate TSP.NET git\Laborator-12-Proiect-3\Proiectul 3\PictureManagerLibrary\bin\Debug\PictureManagerLibrary.pdb
+C:\Users\Amalia\Desktop\Ami\git Organize\laboratoare organizate TSP.NET git\Laborator-12-Proiect-3\Proiectul 3\PictureManagerLibrary\bin\Debug\EntityFramework.dll
+C:\Users\Amalia\Desktop\Ami\git Organize\laboratoare organizate TSP.NET git\Laborator-12-Proiect-3\Proiectul 3\PictureManagerLibrary\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Amalia\Desktop\Ami\git Organize\laboratoare organizate TSP.NET git\Laborator-12-Proiect-3\Proiectul 3\PictureManagerLibrary\bin\Debug\EntityFramework.xml
+C:\Users\Amalia\Desktop\Ami\git Organize\laboratoare organizate TSP.NET git\Laborator-12-Proiect-3\Proiectul 3\PictureManagerLibrary\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Amalia\Desktop\Ami\git Organize\laboratoare organizate TSP.NET git\Laborator-12-Proiect-3\Proiectul 3\PictureManagerLibrary\obj\Debug\PictureManagerLibrary.csprojAssemblyReference.cache
+C:\Users\Amalia\Desktop\Ami\git Organize\laboratoare organizate TSP.NET git\Laborator-12-Proiect-3\Proiectul 3\PictureManagerLibrary\obj\Debug\PictureManagerLibrary.csproj.CopyComplete
+C:\Users\Amalia\Desktop\Ami\git Organize\laboratoare organizate TSP.NET git\Laborator-12-Proiect-3\Proiectul 3\PictureManagerLibrary\obj\Debug\PictureManagerLibrary.dll
+C:\Users\Amalia\Desktop\Ami\git Organize\laboratoare organizate TSP.NET git\Laborator-12-Proiect-3\Proiectul 3\PictureManagerLibrary\obj\Debug\PictureManagerLibrary.pdb

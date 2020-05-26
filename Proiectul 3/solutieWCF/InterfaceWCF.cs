@@ -35,7 +35,7 @@ namespace solutieWCF
 
     [ServiceContract]
     public interface InterfaceTag
-    {
+    {      
         [OperationContract]
         Boolean CreateTag(string valueOfTag);
         [OperationContract]
@@ -50,6 +50,8 @@ namespace solutieWCF
         Tags GetTag(string givenTagValue);
         [OperationContract]
         List<Tags> GetTagAll();
+        [OperationContract(Name = "GetTagsByTableWayId")]
+        List<Tags> GetTag(int tableWayId);
     }
 
     [ServiceContract]

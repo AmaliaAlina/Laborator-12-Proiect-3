@@ -7,18 +7,26 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+
 namespace PictureManagerLibrary
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.Runtime.Serialization;
+
+    [DataContract(IsReference = true)]
     public partial class TableWays
     {
+        [DataMember]
         public int Id { get; set; }
+        [DataMember]
         public bool Is_Deleted { get; set; }
-    
+
+        [DataMember]
         public virtual Media Medium { get; set; }
+        [DataMember]
         public virtual Tags Tag { get; set; }
+        [DataMember]
         public virtual TagType TagType { get; set; }
     }
 }

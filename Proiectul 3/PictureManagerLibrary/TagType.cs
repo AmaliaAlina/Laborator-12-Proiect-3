@@ -11,7 +11,9 @@ namespace PictureManagerLibrary
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.Runtime.Serialization;
+
+    [DataContract(IsReference = true)]
     public partial class TagType
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -21,10 +23,14 @@ namespace PictureManagerLibrary
             this.TableWays = new HashSet<TableWays>();
         }
     
+        [DataMember]
         public int Id_TagType { get; set; }
+        [DataMember]
         public string Value_tagType { get; set; }
+        [DataMember]
         public bool Is_Deleted { get; set; }
     
+        [DataMember]
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<TableWays> TableWays { get; set; }
     }

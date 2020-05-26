@@ -35,14 +35,14 @@ namespace PictureManagerLibrary
 
                 ContextDBLibrary.Context.Tags.Add(tag);
                 ContextDBLibrary.Context.SaveChanges();
-               
+
             }
             catch
             {
-                return null ;
+                return null;
             }
             return tag;
-           
+
         }
         public static Tags CreateTagAnReturnTag(string valueOfTag)
         {
@@ -60,16 +60,16 @@ namespace PictureManagerLibrary
             {
                 return null;
             }
-           
+
         }
 
         public static Boolean DeleteTag(Tags deletedTag)
         {
-            try 
+            try
             {
                 deletedTag.Is_Deleted = true;
                 ContextDBLibrary.Context.SaveChanges();
-                
+
             }
             catch (Exception e)
             {
@@ -83,14 +83,14 @@ namespace PictureManagerLibrary
         {
             try
             {
-                ContextDBLibrary.Context.Tags.Where(variable => variable.Id_Tags==updatedTag.Id_Tags && variable.Is_Deleted!=true).FirstOrDefault().Value_tag=updatedTag.Value_tag;
+                ContextDBLibrary.Context.Tags.Where(variable => variable.Id_Tags == updatedTag.Id_Tags && variable.Is_Deleted != true).FirstOrDefault().Value_tag = updatedTag.Value_tag;
                 ContextDBLibrary.Context.SaveChanges();
             }
             catch
             {
                 return false;
             }
-            
+
             return true;
         }
 
@@ -109,7 +109,7 @@ namespace PictureManagerLibrary
         {
             try
             {
-                return ContextDBLibrary.Context.Tags.Where(tag => tag.Value_tag == givenTagValue && tag.Is_Deleted!=true).ToList()[0];
+                return ContextDBLibrary.Context.Tags.Where(tag => tag.Value_tag == givenTagValue && tag.Is_Deleted != true).ToList()[0];
             }
             catch
             {
@@ -121,9 +121,22 @@ namespace PictureManagerLibrary
         {
             return ContextDBLibrary.Context.Tags.Where(tag => tag.Is_Deleted != true).ToList();
         }
+        public static Tags GetTag(int tableWayId)
+        {
+            using (var MyBd = new ModelDBPicturesManagerContainer())
+            {
+                try
+                {
+                    return MyBd.Tags.Where(tag => tag.Id_Tags == tableWayId && tag.Is_Deleted != true).ToList()[0];
+                }
+                catch
+                {
+                    return null;
+                }
+            };
 
-        
-           
-        
+
+
+        }
     }
 }

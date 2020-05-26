@@ -12,17 +12,22 @@ C:\Users\Amalia\source\repos\Proiect2\hostWCF\obj\Debug\hostWCF.csprojAssemblyRe
 C:\Users\Amalia\source\repos\Proiect2\hostWCF\obj\Debug\hostWCF.csproj.CopyComplete
 C:\Users\Amalia\source\repos\Proiect2\hostWCF\obj\Debug\hostWCF.exe
 C:\Users\Amalia\source\repos\Proiect2\hostWCF\obj\Debug\hostWCF.pdb
+C:\Users\Amalia\Desktop\Ami\git Organize\laboratoare organizate TSP.NET git\Laborator-12-Proiect-3\Proiectul 3\hostWCF\bin\Debug\EntityFramework.xml
 C:\Users\Amalia\Desktop\Ami\git Organize\laboratoare organizate TSP.NET git\Laborator-12-Proiect-3\Proiectul 3\hostWCF\bin\Debug\hostWCF.exe.config
 C:\Users\Amalia\Desktop\Ami\git Organize\laboratoare organizate TSP.NET git\Laborator-12-Proiect-3\Proiectul 3\hostWCF\bin\Debug\hostWCF.exe
 C:\Users\Amalia\Desktop\Ami\git Organize\laboratoare organizate TSP.NET git\Laborator-12-Proiect-3\Proiectul 3\hostWCF\bin\Debug\hostWCF.pdb
 C:\Users\Amalia\Desktop\Ami\git Organize\laboratoare organizate TSP.NET git\Laborator-12-Proiect-3\Proiectul 3\hostWCF\bin\Debug\solutieWCF.dll
+C:\Users\Amalia\Desktop\Ami\git Organize\laboratoare organizate TSP.NET git\Laborator-12-Proiect-3\Proiectul 3\hostWCF\bin\Debug\System.Data.SqlClient.dll
 C:\Users\Amalia\Desktop\Ami\git Organize\laboratoare organizate TSP.NET git\Laborator-12-Proiect-3\Proiectul 3\hostWCF\bin\Debug\PictureManagerLibrary.dll
 C:\Users\Amalia\Desktop\Ami\git Organize\laboratoare organizate TSP.NET git\Laborator-12-Proiect-3\Proiectul 3\hostWCF\bin\Debug\EntityFramework.dll
 C:\Users\Amalia\Desktop\Ami\git Organize\laboratoare organizate TSP.NET git\Laborator-12-Proiect-3\Proiectul 3\hostWCF\bin\Debug\solutieWCF.pdb
+C:\Users\Amalia\Desktop\Ami\git Organize\laboratoare organizate TSP.NET git\Laborator-12-Proiect-3\Proiectul 3\hostWCF\bin\Debug\solutieWCF.dll.config
+C:\Users\Amalia\Desktop\Ami\git Organize\laboratoare organizate TSP.NET git\Laborator-12-Proiect-3\Proiectul 3\hostWCF\bin\Debug\System.Data.SqlClient.xml
 C:\Users\Amalia\Desktop\Ami\git Organize\laboratoare organizate TSP.NET git\Laborator-12-Proiect-3\Proiectul 3\hostWCF\bin\Debug\PictureManagerLibrary.pdb
 C:\Users\Amalia\Desktop\Ami\git Organize\laboratoare organizate TSP.NET git\Laborator-12-Proiect-3\Proiectul 3\hostWCF\bin\Debug\PictureManagerLibrary.dll.config
-C:\Users\Amalia\Desktop\Ami\git Organize\laboratoare organizate TSP.NET git\Laborator-12-Proiect-3\Proiectul 3\hostWCF\bin\Debug\EntityFramework.xml
 C:\Users\Amalia\Desktop\Ami\git Organize\laboratoare organizate TSP.NET git\Laborator-12-Proiect-3\Proiectul 3\hostWCF\obj\Debug\HostWCF.csprojAssemblyReference.cache
 C:\Users\Amalia\Desktop\Ami\git Organize\laboratoare organizate TSP.NET git\Laborator-12-Proiect-3\Proiectul 3\hostWCF\obj\Debug\HostWCF.csproj.CopyComplete
 C:\Users\Amalia\Desktop\Ami\git Organize\laboratoare organizate TSP.NET git\Laborator-12-Proiect-3\Proiectul 3\hostWCF\obj\Debug\hostWCF.exe
 C:\Users\Amalia\Desktop\Ami\git Organize\laboratoare organizate TSP.NET git\Laborator-12-Proiect-3\Proiectul 3\hostWCF\obj\Debug\hostWCF.pdb
+C:\Users\Amalia\Desktop\Ami\git Organize\laboratoare organizate TSP.NET git\Laborator-12-Proiect-3\Proiectul 3\hostWCF\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Amalia\Desktop\Ami\git Organize\laboratoare organizate TSP.NET git\Laborator-12-Proiect-3\Proiectul 3\hostWCF\bin\Debug\EntityFramework.SqlServer.xml

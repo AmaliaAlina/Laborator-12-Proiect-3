@@ -11,21 +11,28 @@ namespace PictureManagerLibrary
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.Runtime.Serialization;
+
+    [DataContract(IsReference = true)]
     public partial class Media
     {
+  
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Media()
         {
             this.Is_Deleted = false;
             this.TableWays = new HashSet<TableWays>();
         }
-    
+        [DataMember]
         public int Id_Media { get; set; }
+        [DataMember]
         public string Media_name { get; set; }
+        [DataMember]
         public string Media_path { get; set; }
+        [DataMember]
         public bool Is_Deleted { get; set; }
-    
+
+        [DataMember]
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<TableWays> TableWays { get; set; }
     }

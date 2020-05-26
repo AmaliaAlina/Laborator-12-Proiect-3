@@ -119,7 +119,8 @@ namespace PictureManagerLibrary
         {
             try
             {
-                return ContextDBLibrary.Context.Media.Where(media => media.Is_Deleted!= true).ToList();
+                return ContextDBLibrary.Context.Media.Where(media => media.Is_Deleted != true).ToList();
+                //return new List<Media>();
             }
             catch(Exception e)
             {

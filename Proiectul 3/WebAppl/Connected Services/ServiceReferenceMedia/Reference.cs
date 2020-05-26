@@ -14,7 +14,7 @@ namespace ServiceReferenceMedia
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Media", Namespace="http://schemas.datacontract.org/2004/07/PictureManagerLibrary")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Media", Namespace="http://schemas.datacontract.org/2004/07/PictureManagerLibrary", IsReference=true)]
     public partial class Media : object
     {
         
@@ -96,7 +96,7 @@ namespace ServiceReferenceMedia
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="TableWays", Namespace="http://schemas.datacontract.org/2004/07/PictureManagerLibrary")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="TableWays", Namespace="http://schemas.datacontract.org/2004/07/PictureManagerLibrary", IsReference=true)]
     public partial class TableWays : object
     {
         
@@ -178,7 +178,7 @@ namespace ServiceReferenceMedia
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Tags", Namespace="http://schemas.datacontract.org/2004/07/PictureManagerLibrary")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Tags", Namespace="http://schemas.datacontract.org/2004/07/PictureManagerLibrary", IsReference=true)]
     public partial class Tags : object
     {
         
@@ -245,7 +245,7 @@ namespace ServiceReferenceMedia
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="TagType", Namespace="http://schemas.datacontract.org/2004/07/PictureManagerLibrary")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="TagType", Namespace="http://schemas.datacontract.org/2004/07/PictureManagerLibrary", IsReference=true)]
     public partial class TagType : object
     {
         
@@ -365,6 +365,9 @@ namespace ServiceReferenceMedia
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfaceTag/GetTagAll", ReplyAction="http://tempuri.org/InterfaceTag/GetTagAllResponse")]
         System.Threading.Tasks.Task<System.Collections.Generic.List<ServiceReferenceMedia.Tags>> GetTagAllAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfaceTag/GetTagsByTableWayId", ReplyAction="http://tempuri.org/InterfaceTag/GetTagsByTableWayIdResponse")]
+        System.Threading.Tasks.Task<System.Collections.Generic.List<ServiceReferenceMedia.Tags>> GetTagsByTableWayIdAsync(int tableWayId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfaceTagTypes/Create", ReplyAction="http://tempuri.org/InterfaceTagTypes/CreateResponse")]
         System.Threading.Tasks.Task<bool> CreateAsync(string valueOfTag);
@@ -545,6 +548,11 @@ namespace ServiceReferenceMedia
         public System.Threading.Tasks.Task<System.Collections.Generic.List<ServiceReferenceMedia.Tags>> GetTagAllAsync()
         {
             return base.Channel.GetTagAllAsync();
+        }
+        
+        public System.Threading.Tasks.Task<System.Collections.Generic.List<ServiceReferenceMedia.Tags>> GetTagsByTableWayIdAsync(int tableWayId)
+        {
+            return base.Channel.GetTagsByTableWayIdAsync(tableWayId);
         }
         
         public System.Threading.Tasks.Task<bool> CreateAsync(string valueOfTag)

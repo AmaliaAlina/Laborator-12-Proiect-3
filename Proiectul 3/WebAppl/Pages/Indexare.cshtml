@@ -1,8 +1,51 @@
 ﻿@page
+@addTagHelper "*, Microsoft.AspNet.Mvc.TagHelpers"
 @model WebAppl.IndexareModel
 @{
-    ViewData["Title"] = "Indexare";
+    ViewData["Title"] = "IndexareaMea";
 }
 
-<h1>Indexare</h1>
+@using (Html.BeginForm("Indexare", "indexare", FormMethod.Post, new { @class = "form-horizontal" }))
+{
+    <table class="table"> 
+    <thead> 
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.listMediaDTO[0].Id_Media)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.listMediaDTO[0].Media_name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.listMediaDTO[0].Media_path)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.listMediaDTO)
+{
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id_Media)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Media_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Media_path)
+            </td>
+
+            <td>
+                <a asp-page="./Details" asp-route-id="@item.Id_Media">Details</a> 
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+}
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
 

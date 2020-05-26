@@ -1,0 +1,35 @@
+﻿@page
+@model WebAppl.DetailsModel
+@{
+    ViewData["Title"] = "Details";
+}
+
+    <h1>Details  for @Html.DisplayFor(model => Model.media.Id_Media) </h1>
+ <h2> Numbers of Tags for this picture:  @Html.DisplayFor(model => Model.media.TableWays.Count)</h2>
+
+@using (Html.BeginForm("Detaliere", "detaliere", FormMethod.Post, new { @class = "form-horizontal" }))
+{
+<table class="table">
+
+        @foreach (var item in Model.media.TableWays)
+        {
+            <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Tag.Id_Tags)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Tag.Value_tag)
+                        </td>
+        </tr>
+        }
+
+        <tbody>
+        </tbody>
+    </table>
+}
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+

@@ -117,3 +117,6 @@ C:\Users\Amalia\Desktop\Ami\git Organize\laboratoare organizate TSP.NET git\Labo
 C:\Users\Amalia\Desktop\Ami\git Organize\laboratoare organizate TSP.NET git\Laborator-12-Proiect-3\Proiectul 3\WebAppl\obj\Debug\netcoreapp3.1\WebAppl.Views.pdb
 C:\Users\Amalia\Desktop\Ami\git Organize\laboratoare organizate TSP.NET git\Laborator-12-Proiect-3\Proiectul 3\WebAppl\obj\Debug\netcoreapp3.1\WebAppl.dll
 C:\Users\Amalia\Desktop\Ami\git Organize\laboratoare organizate TSP.NET git\Laborator-12-Proiect-3\Proiectul 3\WebAppl\obj\Debug\netcoreapp3.1\WebAppl.pdb
+C:\Users\Amalia\Desktop\Ami\git Organize\laboratoare organizate TSP.NET git\Laborator-12-Proiect-3\Proiectul 3\WebAppl\obj\Debug\netcoreapp3.1\Razor\Pages\Indexare.cshtml.g.cs
+C:\Users\Amalia\Desktop\Ami\git Organize\laboratoare organizate TSP.NET git\Laborator-12-Proiect-3\Proiectul 3\WebAppl\obj\Debug\netcoreapp3.1\Razor\Pages\Search.cshtml.g.cs
+C:\Users\Amalia\desktop\Ami\git Organize\laboratoare organizate TSP.NET git\Laborator-12-Proiect-3\Proiectul 3\WebAppl\obj\Debug\netcoreapp3.1\Razor\Pages\Details.cshtml.g.cs

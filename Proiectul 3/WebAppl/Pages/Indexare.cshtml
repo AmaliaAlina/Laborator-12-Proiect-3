@@ -35,7 +35,9 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Media_path)
             </td>
-
+            <td>
+               <img src= "@Html.DisplayFor(model =>item.Media_path)" style="height:200px;width:200px;"/>
+            </td>
             <td>
                 <a asp-page="./Details" asp-route-id="@item.Id_Media">Details</a> 
             </td>

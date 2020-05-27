@@ -14,7 +14,8 @@ namespace WebAppl
     {
 
         public MyBdClient myBdClient = new MyBdClient();
-        public List<MediaDTO> listMediaDTO { get; set; } 
+        public List<MediaDTO> listMediaDTO { get; set; }
+        public FileResult f;
 
         public IndexareModel()
         {
@@ -31,11 +32,18 @@ namespace WebAppl
                 mediaDTO.Id_Media = element.Id_Media;
                 mediaDTO.Is_Deleted = element.Is_Deleted;
                 mediaDTO.Media_name = element.Media_name;
-                mediaDTO.Media_path = "PictureManager - DBPictures/" + Path.GetFileName(element.Media_path);
+                mediaDTO.Media_path = "PictureManager-DBPictures/" + Path.GetFileName(element.Media_path);
                 //mediaDTO.TableWaysDTO = element.TableWays;
                 listMediaDTO.Add(mediaDTO);
+                //f = OnGetImage(mediaDTO.Media_path);
             }
 
         }
+
+        //public FileResult OnGetImage(string path)
+        //{
+        //    var bytes = System.IO.File.ReadAllBytes(path);
+        //    return File(bytes, "image/png");
+        //}
     }
 }

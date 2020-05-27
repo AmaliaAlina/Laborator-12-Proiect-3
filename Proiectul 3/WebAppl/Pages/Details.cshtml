@@ -4,23 +4,25 @@
     ViewData["Title"] = "Details";
 }
 
-    <h1>Details  for @Html.DisplayFor(model => Model.media.Id_Media) </h1>
- <h2> Numbers of Tags for this picture:  @Html.DisplayFor(model => Model.media.TableWays.Count)</h2>
+    <h1>Details  for picture with id @Html.DisplayFor(model => Model.media.Id_Media)  and name  @Html.DisplayFor(model => Model.media.Media_name)  </h1>
+<h2> Numbers of Tags for this picture:  @Html.DisplayFor(model => Model.media.TableWays.Count)</h2>
+
+<img src="~/PictureManager-DBPictures/@Html.ValueFor(modelItem=> Model.media.Media_name)" style="height:200px;width:200px;" />
 
 @using (Html.BeginForm("Detaliere", "detaliere", FormMethod.Post, new { @class = "form-horizontal" }))
 {
-<table class="table">
+    <table class="table">
 
         @foreach (var item in Model.media.TableWays)
         {
             <tr>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Tag.Id_Tags)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Tag.Value_tag)
-                        </td>
-        </tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Tag.Id_Tags)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Tag.Value_tag)
+                </td>
+            </tr>
         }
 
         <tbody>

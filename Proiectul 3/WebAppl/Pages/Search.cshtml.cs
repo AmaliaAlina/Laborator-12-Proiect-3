@@ -14,6 +14,7 @@ namespace WebAppl
         public List<Media> mediaResultByTag = new List<Media>();
         public List<Media> mediaResultByTagType = new List<Media>();
         public List<Media> mediaResultByName = new List<Media>();
+        public List<Media> mediaRezultById = new List<Media>();
         public async Task OnGetAsync()
         {
             string stringPrimit = Request.Query["search"];
@@ -27,15 +28,27 @@ namespace WebAppl
                     {
                         mediaResultByName.Add(item);
                     }
+                    if (item.Id_Media.ToString() == stringPrimit)
+                    {
+                        mediaRezultById.Add(item);
+                    }
                     foreach(var element in item.TableWays)
                     {
                         if(element.Tag.Value_tag == stringPrimit)
                         {
                             mediaResultByTag.Add(item);
                         }
+                        if (element.Tag.Id_Tags.ToString() == stringPrimit)
+                        {
+                            mediaRezultById.Add(item);
+                        }
                         if (element.TagType.Value_tagType == stringPrimit)
                         {
                             mediaResultByTagType.Add(item);
+                        }
+                        if (element.TagType.Id_TagType.ToString() == stringPrimit)
+                        {
+                            mediaRezultById.Add(item);
                         }
                     }
                     

@@ -59,48 +59,74 @@
     <h2>Fisiere cu acest nume: @Html.DisplayFor(model => Model.mediaResultByName.Count)</h2>
     @foreach (var item in Model.mediaResultByName)
     {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Id_Media)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Media_name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Media_path)
-            </td>
-        </tr>
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.Id_Media)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Media_name)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Media_path)
+    </td>
+    <td>
+        <img src="~/PictureManager-DBPictures/@Html.ValueFor(modelItem=> item.Media_name)"  style="height:200px;width:200px;" />
+    </td>
+</tr>
     }
     <h2>Fisiere cu acest tag: @Html.DisplayFor(model => Model.mediaResultByTag.Count)</h2>
     @foreach (var item in Model.mediaResultByTag)
     {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Id_Media)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Media_name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Media_path)
-            </td>
-        </tr>
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.Id_Media)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Media_name)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Media_path)
+    </td>
+    <td>
+        <img src="~/PictureManager-DBPictures/@Html.ValueFor(modelItem=> item.Media_name)" style="height:200px;width:200px;" />
+    </td>
+</tr>
     }
     <h2>Fisiere cu aceasta categorie: @Html.DisplayFor(model =>  Model.mediaResultByTagType.Count)</h2>
     @foreach ( var item in Model.mediaResultByTagType)
     {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Id_Media)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Media_name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Media_path)
-        </td>
-    </tr>
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.Id_Media)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Media_name)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Media_path)
+    </td>
+    <td>
+        <img src="~/PictureManager-DBPictures/@Html.ValueFor(modelItem=> item.Media_name)" style="height:200px;width:200px;" />
+    </td>
+</tr>
     }
-
+<h2>Fisiere cu acest Id: @Html.DisplayFor(model =>  Model.mediaResultByTagType.Count)</h2>
+    @foreach ( var item in Model.mediaRezultById)
+    {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.Id_Media)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Media_name)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Media_path)
+    </td>
+    <td>
+        <img src="~/PictureManager-DBPictures/@Html.ValueFor(modelItem=> item.Media_name)" style="height:200px;width:200px;" />
+    </td>
+</tr>
+    }
 </body>
 </html>

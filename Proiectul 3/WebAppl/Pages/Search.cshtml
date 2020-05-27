@@ -6,3 +6,101 @@
 
 <h1>Search</h1>
 
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    #myInput {
+        background-image: url('/css/searchicon.png');
+        background-position: 10px 12px;
+        background-repeat: no-repeat;
+        width: 100%;
+        font-size: 16px;
+        padding: 12px 20px 12px 40px;
+        border: 1px solid #ddd;
+        margin-bottom: 12px;
+    }
+
+    #myUL {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+        #myUL li a {
+            border: 1px solid #ddd;
+            margin-top: -1px; /* Prevent double borders */
+            background-color: #f6f6f6;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            color: black;
+            display: block
+        }
+
+            #myUL li a:hover:not(.header) {
+                background-color: #eee;
+            }
+</style>
+</head>
+<body>
+
+
+    <form action="/Search" method="GET" enctype="application/x-www-form-urlencoded">
+        <input name="search" placeholder="Search for" />
+        <input type="submit" value="search" />
+    </form>
+
+    <h2>Fisiere cu acest nume: @Html.DisplayFor(model => Model.mediaResultByName.Count)</h2>
+    @foreach (var item in Model.mediaResultByName)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id_Media)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Media_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Media_path)
+            </td>
+        </tr>
+    }
+    <h2>Fisiere cu acest tag: @Html.DisplayFor(model => Model.mediaResultByTag.Count)</h2>
+    @foreach (var item in Model.mediaResultByTag)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id_Media)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Media_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Media_path)
+            </td>
+        </tr>
+    }
+    <h2>Fisiere cu aceasta categorie: @Html.DisplayFor(model =>  Model.mediaResultByTagType.Count)</h2>
+    @foreach ( var item in Model.mediaResultByTagType)
+    {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Id_Media)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Media_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Media_path)
+        </td>
+    </tr>
+    }
+
+</body>
+</html>
